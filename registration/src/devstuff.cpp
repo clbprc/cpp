@@ -18,7 +18,7 @@ namespace dev
 	}
 	
 	
-	int f_testing(std::string filename, std::string text)				//this shit works wonders
+	int f_testing(std::string filename, std::string text)				//this works wonders
 	{
 		std::cout << "1: create\n 2: write\n 3: read\n4: clear\n\n";
 		int choice{};
