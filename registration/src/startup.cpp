@@ -12,15 +12,15 @@ int boot()
 	std::cin >> ini;		
 	if (ini == 1)
 	{
-			//call registration		
+		test::registration();
 	}
 	if (ini == 2)
 	{
-			//call settings
+		settings();
 	}
 	if (ini == 3)
 	{
-			//call standby
+		standby();
 	}
 	if (ini == 9)
 	{
@@ -37,7 +37,51 @@ int isNewUser(std::string)
 	return 0;
 }
 
+int settings()
+{
+	system("cls");
+	std::cout << "Settings:\n\n[1] Upload database tutorial";
+	return 0;
+}
+int standby()
+{
+	while (true)
+	{
+		int x =+ 2;
+		std::cout << x;
+		system("cls");
+		
+	}
+	return 0;
+}
+
+namespace test
+{
+	int registration()
+	{
+		std::cout << "[1] f_make\n[2] f_write\n[3] f_read\n[4] f_clear\n\n";
+		int f{};
+		std::cin >> f;
+
+		if (f == 1)
+		{
+			std::cout << "this needs to be removed";
+		}
+		if (f == 2)
+		{
+			f_write("register.txt", "test text\nline2");
+		}
+		if (f == 3)
+		{
+			f_read("register.txt");
+		}
+		else
+		{
+			std::cout << "else";
+		}
 
 
 
-
+		return 0;
+	}
+}
